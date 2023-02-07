@@ -19,7 +19,7 @@ export default function CreatePost() {
     if(form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:4000/api/v1/dalle',{
+        const response = await fetch('https://imageai-3rc6.onrender.com/api/v1/dalle',{
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
